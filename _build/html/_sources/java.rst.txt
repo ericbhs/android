@@ -2,6 +2,8 @@
 Rappels sur Java
 ================
 
+.. contents:: :local:
+
 Types primitifs
 ===============
 

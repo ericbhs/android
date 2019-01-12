@@ -36,8 +36,29 @@
             
   <div class="section" id="rappels-sur-java">
 <h1>Rappels sur Java<a class="headerlink" href="#rappels-sur-java" title="Permalink to this headline">¶</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><a class="reference internal" href="#types-primitifs" id="id1">Types primitifs</a></li>
+<li><a class="reference internal" href="#classes" id="id2">Classes</a><ul>
+<li><a class="reference internal" href="#declarer-une-classe" id="id3">Déclarer une classe</a></li>
+<li><a class="reference internal" href="#attributs-de-classe" id="id4">Attributs de classe</a></li>
+<li><a class="reference internal" href="#heritage" id="id5">Héritage</a><ul>
+<li><a class="reference internal" href="#abstract-classe-qui-ne-peut-etre-instanciee" id="id6"><code class="docutils literal notranslate"><span class="pre">abstract</span></code> : classe qui ne peut être instanciée</a></li>
+<li><a class="reference internal" href="#extends-creer-une-classe-fille" id="id7"><code class="docutils literal notranslate"><span class="pre">extends</span></code> : créer une classe fille</a></li>
+<li><a class="reference internal" href="#autres-mots-cles" id="id8">Autres mots clés</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#niveaux-d-accessibilite-des-attributs-et-methodes" id="id9">Niveaux d’accessibilité des attributs et méthodes</a></li>
+<li><a class="reference internal" href="#les-interfaces" id="id10">Les interfaces</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#compilation" id="id11">Compilation</a></li>
+<li><a class="reference internal" href="#plateformes-java" id="id12">Plateformes Java</a></li>
+<li><a class="reference internal" href="#sdk" id="id13">SDK</a></li>
+</ul>
+</div>
 <div class="section" id="types-primitifs">
-<h2>Types primitifs<a class="headerlink" href="#types-primitifs" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id1">Types primitifs</a><a class="headerlink" href="#types-primitifs" title="Permalink to this headline">¶</a></h2>
 <p>Il existe 8 types primitifs :</p>
 <table border="1" class="docutils">
 <colgroup>
@@ -108,9 +129,9 @@
 </table>
 </div>
 <div class="section" id="classes">
-<h2>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id2">Classes</a><a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="declarer-une-classe">
-<h3>Déclarer une classe<a class="headerlink" href="#declarer-une-classe" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id3">Déclarer une classe</a><a class="headerlink" href="#declarer-une-classe" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Voiture</span> <span class="o">{</span>
     <span class="c1">//On déclare les atributs de la classe ici :</span>
     <span class="kt">int</span> <span class="n">roue</span> <span class="o">=</span> <span class="mi">4</span><span class="o">;</span>
@@ -130,13 +151,13 @@
 </div>
 </div>
 <div class="section" id="attributs-de-classe">
-<h3>Attributs de classe<a class="headerlink" href="#attributs-de-classe" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id4">Attributs de classe</a><a class="headerlink" href="#attributs-de-classe" title="Permalink to this headline">¶</a></h3>
 <p>Mot clé pour faire référence aux attributs de classe : <code class="docutils literal notranslate"><span class="pre">this</span></code></p>
 </div>
 <div class="section" id="heritage">
-<h3>Héritage<a class="headerlink" href="#heritage" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id5">Héritage</a><a class="headerlink" href="#heritage" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="abstract-classe-qui-ne-peut-etre-instanciee">
-<h4><code class="docutils literal notranslate"><span class="pre">abstract</span></code> : classe qui ne peut être instanciée<a class="headerlink" href="#abstract-classe-qui-ne-peut-etre-instanciee" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">abstract</span></code> : classe qui ne peut être instanciée</a><a class="headerlink" href="#abstract-classe-qui-ne-peut-etre-instanciee" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Dans le fichier vehicule.java</span>
 <span class="c1">// Classe qui ne peut être instanciée</span>
 <span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Vehicule</span> <span class="o">{</span>
@@ -147,7 +168,7 @@
 </div>
 </div>
 <div class="section" id="extends-creer-une-classe-fille">
-<h4><code class="docutils literal notranslate"><span class="pre">extends</span></code> : créer une classe fille<a class="headerlink" href="#extends-creer-une-classe-fille" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">extends</span></code> : créer une classe fille</a><a class="headerlink" href="#extends-creer-une-classe-fille" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">// Dans le fichier voiture.java</span>
 <span class="c1">// Une Voiture est un Vehicule</span>
 <span class="kd">class</span> <span class="nc">Voiture</span> <span class="kd">extends</span> <span class="n">Vehicule</span> <span class="o">{</span> <span class="o">}</span>
@@ -155,7 +176,7 @@
 </div>
 </div>
 <div class="section" id="autres-mots-cles">
-<h4>Autres mots clés<a class="headerlink" href="#autres-mots-cles" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#id8">Autres mots clés</a><a class="headerlink" href="#autres-mots-cles" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">public</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">R</span> <span class="o">{</span>
     <span class="o">...</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kd">class</span> <span class="nc">layout</span> <span class="o">{</span>
@@ -171,7 +192,7 @@
 </div>
 </div>
 <div class="section" id="niveaux-d-accessibilite-des-attributs-et-methodes">
-<h3>Niveaux d’accessibilité des attributs et méthodes<a class="headerlink" href="#niveaux-d-accessibilite-des-attributs-et-methodes" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id9">Niveaux d’accessibilité des attributs et méthodes</a><a class="headerlink" href="#niveaux-d-accessibilite-des-attributs-et-methodes" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><code class="docutils literal notranslate"><span class="pre">public</span></code>, pour qu’un attribut ou une méthode soit accessible à tous.</li>
 <li><code class="docutils literal notranslate"><span class="pre">protected</span></code>, pour que les éléments ne soient accessibles qu’aux classes filles.</li>
@@ -179,7 +200,7 @@
 </ul>
 </div>
 <div class="section" id="les-interfaces">
-<h3>Les interfaces<a class="headerlink" href="#les-interfaces" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#id10">Les interfaces</a><a class="headerlink" href="#les-interfaces" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="c1">//Interface des objets qui peuvent voler</span>
 <span class="kd">interface</span> <span class="nc">PeutVoler</span> <span class="o">{</span>
   <span class="kt">void</span> <span class="nf">décoller</span><span class="o">();</span>
@@ -193,11 +214,11 @@
 </div>
 </div>
 <div class="section" id="compilation">
-<h2>Compilation<a class="headerlink" href="#compilation" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id11">Compilation</a><a class="headerlink" href="#compilation" title="Permalink to this headline">¶</a></h2>
 <p>La compilation transforme le code source en <strong>bytecode</strong>. Dans le cas d’Android, ce bytecode sera interprété par la <strong>machine virtuelle Dalvik</strong> lors de l’éxécution du programme.</p>
 </div>
 <div class="section" id="plateformes-java">
-<h2>Plateformes Java<a class="headerlink" href="#plateformes-java" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id12">Plateformes Java</a><a class="headerlink" href="#plateformes-java" title="Permalink to this headline">¶</a></h2>
 <p>Il existe deux plateformes en Java :</p>
 <ul class="simple">
 <li>Le <strong>JRE (Java Runtime Environment)</strong>, qui contient la JVM (Java Virtual Machine, rappelez-vous, j’ai expliqué le concept de machine virtuelle dans le premier chapitre), les bibliothèques de base du langage ainsi que tous les composants nécessaires au lancement d’applications ou d’applets Java. En gros, c’est l’ensemble d’outils qui vous permettra d’<strong>exécuter des applications Java</strong>.</li>
@@ -205,7 +226,7 @@
 </ul>
 </div>
 <div class="section" id="sdk">
-<h2>SDK<a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#id13">SDK</a><a class="headerlink" href="#sdk" title="Permalink to this headline">¶</a></h2>
 <p>Le <strong>SDK Android</strong> est donc un ensemble d’outils que met à disposition Google afin de vous permettre de développer des applications pour Android.</p>
 </div>
 </div>
@@ -231,6 +252,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Rappels sur Java</a></li>
 <li class="toctree-l1"><a class="reference internal" href="activites.html">Activités</a></li>
 <li class="toctree-l1"><a class="reference internal" href="shortcuts.html">Raccourcis Clavier Android Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="multiple_activities.html">Multiple activities</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bluetooth_scanner.html">About BLE scanner project</a></li>
 </ul>
 
 <div class="relations">

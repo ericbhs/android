@@ -2,6 +2,8 @@
 Multiple activities
 ===================
 
+.. contents:: :local:
+
 Core elements
 =============
 

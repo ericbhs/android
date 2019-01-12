@@ -2,6 +2,8 @@
 Activités
 =========
 
+.. contents:: :local:
+
 https://openclassrooms.com/fr/courses/2023346-creez-des-applications-pour-android/2023968-votre-premiere-application
 
 * briques de base qui composent une application

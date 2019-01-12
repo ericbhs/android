@@ -2,6 +2,8 @@
 Raccourcis Clavier Android Studio
 =================================
 
+.. contents:: :local:
+
 .. list-table::
    :widths: 25 50
    :header-rows: 1

@@ -13,6 +13,7 @@ Welcome to Android Apps's documentation!
    activites
    shortcuts
    multiple_activities
+   bluetooth_scanner
 
 
 
